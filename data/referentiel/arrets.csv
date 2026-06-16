@@ -1,0 +1,94 @@
+arret_id,nom,latitude,longitude,ligne_id,ordre
+A0001,Adidogomé Assiyéyé,6.1675,1.1325,L01,1
+A0002,Adidogomé Marché,6.164,1.139,L01,2
+A0003,Avépozo,6.1605,1.145,L01,3
+A0004,Aflao Gakli,6.157,1.151,L01,4
+A0005,Totsi,6.154,1.158,L01,5
+A0006,Hanoukopé,6.1485,1.17,L01,6
+A0007,Nyékonakpoè,6.1455,1.183,L01,7
+A0008,Boulevard du Mono,6.141,1.196,L01,8
+A0009,Adawlato Marché,6.135,1.215,L01,9
+A0010,Agoè Assiyéyé Terminus,6.207,1.19,L02,1
+A0011,Agoè Nyivé,6.1985,1.192,L02,2
+A0012,Agoè Démakpoé,6.19,1.195,L02,3
+A0013,Adétikopé Carrefour,6.181,1.199,L02,4
+A0014,Totsivi,6.172,1.201,L02,5
+A0015,Tokoin Hôpital,6.162,1.205,L02,6
+A0016,Tokoin Casablanca,6.153,1.211,L02,7
+A0006,Hanoukopé,6.1485,1.17,L02,8
+A0017,Adawlato Grand Marché,6.135,1.215,L02,9
+A0018,Avédji Limousine,6.208,1.151,L03,1
+A0019,Avédji Carrefour,6.201,1.157,L03,2
+A0020,Cacavéli Marché,6.196,1.152,L03,3
+A0021,Cacavéli BIA,6.19,1.1605,L03,4
+A0022,Wuiti,6.182,1.169,L03,5
+A0023,Hédzranawoé,6.175,1.172,L03,6
+A0024,Tokoin Wuiti,6.167,1.185,L03,7
+A0025,Aflao Sagbado,6.154,1.198,L03,8
+A0009,Adawlato Marché,6.135,1.215,L03,9
+A0026,Campus Universitaire,6.175,1.214,L04,1
+A0027,UL Entrée Principale,6.1715,1.2155,L04,2
+A0028,Tokoin Cassablanca,6.164,1.211,L04,3
+A0029,Tokoin Forever,6.158,1.2095,L04,4
+A0015,Tokoin Hôpital,6.153,1.208,L04,5
+A0030,Be Klikamé,6.148,1.22,L04,6
+A0031,Boulevard du 13 Janvier,6.142,1.218,L04,7
+A0009,Adawlato Marché,6.135,1.215,L04,8
+A0032,Hédzranawoé Terminus,6.182,1.169,L05,1
+A0033,Hédzranawoé Marché,6.176,1.172,L05,2
+A0034,Nukafu,6.17,1.178,L05,3
+A0004,Aflao Gakli,6.162,1.185,L05,4
+A0035,Tokoin Habitat,6.155,1.192,L05,5
+A0036,Octaviano Nétimé,6.148,1.2,L05,6
+A0006,Hanoukopé,6.143,1.208,L05,7
+A0009,Adawlato Marché,6.135,1.215,L05,8
+A0037,Bè Kpota,6.128,1.241,L06,1
+A0038,Bè Klikamé,6.1325,1.234,L06,2
+A0039,Bè Plage,6.129,1.228,L06,3
+A0040,Bd Circulaire,6.138,1.224,L06,4
+A0041,Tokoin Solidarité,6.1465,1.215,L06,5
+A0042,Tokoin Doumassessé,6.151,1.209,L06,6
+A0016,Tokoin Casablanca,6.155,1.207,L06,7
+A0020,Cacavéli Marché,6.196,1.152,L07,1
+A0043,Cacavéli Hôpital,6.19,1.158,L07,2
+A0022,Wuiti,6.182,1.169,L07,3
+A0025,Aflao Sagbado,6.172,1.182,L07,4
+A0044,Tokoin Élevage,6.162,1.195,L07,5
+A0036,Octaviano Nétimé,6.15,1.205,L07,6
+A0045,BIA Centre,6.137,1.22,L07,7
+A0046,Aéroport GTA,6.1655,1.255,L08,1
+A0047,Akodessewa Carrefour,6.153,1.258,L08,2
+A0048,Akodessewa Marché,6.143,1.262,L08,3
+A0037,Bè Kpota,6.128,1.241,L08,4
+A0038,Bè Klikamé,6.1325,1.234,L08,5
+A0040,Bd Circulaire,6.138,1.224,L08,6
+A0009,Adawlato Marché,6.135,1.215,L08,7
+A0049,Baguida Terminus,6.18,1.31,L09,1
+A0050,Baguida Plage,6.17,1.3,L09,2
+A0051,Adamavo,6.162,1.29,L09,3
+A0052,Avépozo Plage,6.153,1.28,L09,4
+A0047,Akodessewa Carrefour,6.15,1.262,L09,5
+A0037,Bè Kpota,6.128,1.241,L09,6
+A0040,Bd Circulaire,6.138,1.224,L09,7
+A0009,Adawlato Marché,6.135,1.215,L09,8
+A0053,Anfamé Terminus,6.132,1.188,L10,1
+A0054,Anfamé Marché,6.137,1.192,L10,2
+A0055,Doulassamé,6.143,1.198,L10,3
+A0036,Octaviano Nétimé,6.149,1.205,L10,4
+A0016,Tokoin Casablanca,6.155,1.208,L10,5
+A0029,Tokoin Forever,6.162,1.2095,L10,6
+A0027,UL Entrée Principale,6.1715,1.2155,L10,7
+A0026,Campus Universitaire,6.175,1.214,L10,8
+A0056,Djidjolé Terminus,6.146,1.18,L11,1
+A0057,Djidjolé Marché,6.143,1.185,L11,2
+A0055,Doulassamé,6.143,1.198,L11,3
+A0006,Hanoukopé,6.143,1.208,L11,4
+A0036,Octaviano Nétimé,6.149,1.205,L11,5
+A0009,Adawlato Marché,6.135,1.215,L11,6
+A0058,Stade de Kégué,6.205,1.225,L12,1
+A0059,Kégué Carrefour,6.198,1.223,L12,2
+A0060,Adidoadin,6.189,1.221,L12,3
+A0014,Totsivi,6.172,1.218,L12,4
+A0028,Tokoin Cassablanca,6.155,1.208,L12,5
+A0006,Hanoukopé,6.143,1.208,L12,6
+A0009,Adawlato Marché,6.135,1.215,L12,7

@@ -1,0 +1,101 @@
+bus_id,immatriculation,modele,capacite,ligne_assignee,date_mise_en_service,statut
+B001,TG 2951-AD,Toyota Coaster,31,L11,2019-04-01,actif
+B002,TG 7891-BC,Toyota Coaster,30,L10,2025-04-01,actif
+B003,TG 2322-AB,Yutong ZK6107HA,48,L08,2018-11-01,actif
+B004,TG 6148-AC,Hyundai County,30,L06,2023-07-01,hors_service
+B005,TG 9414-BD,Mercedes-Benz Citaro,75,L02,2022-05-01,actif
+B006,TG 6062-AB,King Long XMQ6900,45,L06,2025-07-01,actif
+B007,TG 9166-AB,Hyundai County,32,L10,2025-07-01,maintenance
+B008,TG 5237-BA,Toyota Coaster,30,L09,2018-10-01,actif
+B009,TG 3113-AB,King Long XMQ6900,47,L11,2019-12-01,actif
+B010,TG 8701-AC,Hyundai County,29,L02,2025-11-01,actif
+B011,TG 9939-AD,Toyota Coaster,30,L11,2022-09-01,actif
+B012,TG 9223-BD,Hyundai County,31,L07,2021-05-01,actif
+B013,TG 1151-AB,Iveco Crossway,62,L08,2025-06-01,maintenance
+B014,TG 5261-BD,Hyundai County,31,L09,2025-07-01,actif
+B015,TG 1550-AD,Yutong ZK6107HA,51,L02,2025-12-01,actif
+B016,TG 9440-AD,Hyundai County,29,L07,2025-02-01,actif
+B017,TG 9166-AD,Mercedes-Benz Citaro,74,L12,2024-03-01,actif
+B018,TG 1229-AB,Mercedes-Benz Citaro,76,L10,2019-10-01,actif
+B019,TG 5060-AB,Toyota Coaster,27,L09,2022-11-01,actif
+B020,TG 6853-AC,Mercedes-Benz Citaro,75,L11,2025-12-01,actif
+B021,TG 3209-BC,Iveco Crossway,61,L10,2020-10-01,actif
+B022,TG 9269-AD,Mercedes-Benz Citaro,76,L11,2020-03-01,actif
+B023,TG 6013-BC,Hyundai County,31,L03,2021-07-01,actif
+B024,TG 2738-BA,Mercedes-Benz Citaro,73,L06,2023-01-01,actif
+B025,TG 8799-AD,King Long XMQ6900,45,L08,2023-02-01,actif
+B026,TG 8644-BC,Toyota Coaster,28,L03,2021-07-01,actif
+B027,TG 8517-BC,Iveco Crossway,58,L09,2024-01-01,actif
+B028,TG 3840-AB,King Long XMQ6900,47,L01,2025-11-01,actif
+B029,TG 1335-AC,King Long XMQ6900,47,L04,2020-03-01,actif
+B030,TG 4047-BA,Yutong ZK6107HA,51,L09,2024-02-01,actif
+B031,TG 4067-AD,Iveco Crossway,60,L08,2025-07-01,actif
+B032,TG 3899-AD,Toyota Coaster,30,L08,2019-09-01,actif
+B033,TG 5486-AB,Iveco Crossway,59,L01,2019-08-01,actif
+B034,TG 7684-BC,King Long XMQ6900,44,L01,2023-03-01,actif
+B035,TG 9820-AC,Mercedes-Benz Citaro,77,L12,2022-09-01,actif
+B036,TG 4513-BC,Yutong ZK6107HA,52,L05,2020-02-01,actif
+B037,TG 2579-BA,Iveco Crossway,58,L11,2018-06-01,actif
+B038,TG 4039-BD,King Long XMQ6900,43,L09,2023-05-01,actif
+B039,TG 2047-AD,Yutong ZK6107HA,49,L05,2022-02-01,actif
+B040,TG 5211-BA,Mercedes-Benz Citaro,73,L02,2021-01-01,actif
+B041,TG 2537-BD,Toyota Coaster,31,L06,2023-08-01,actif
+B042,TG 1622-BA,Yutong ZK6107HA,52,L04,2025-07-01,maintenance
+B043,TG 2956-BD,Yutong ZK6107HA,52,L11,2022-07-01,actif
+B044,TG 6837-AB,King Long XMQ6900,46,L01,2022-12-01,actif
+B045,TG 3004-AD,Hyundai County,30,L10,2018-09-01,maintenance
+B046,TG 4234-BC,Mercedes-Benz Citaro,73,L03,2019-02-01,actif
+B047,TG 9562-AD,Toyota Coaster,29,L01,2024-10-01,actif
+B048,TG 7804-BA,Hyundai County,29,L07,2021-03-01,actif
+B049,TG 1465-BD,King Long XMQ6900,47,L11,2024-05-01,actif
+B050,TG 4739-AB,Mercedes-Benz Citaro,75,L09,2025-07-01,actif
+B051,TG 6156-AC,King Long XMQ6900,47,L02,2020-09-01,actif
+B052,TG 9422-AD,Yutong ZK6107HA,52,L12,2023-01-01,actif
+B053,TG 1186-BD,Iveco Crossway,61,L01,2021-11-01,actif
+B054,TG 3471-BD,Hyundai County,30,L04,2022-06-01,actif
+B055,TG 7139-AD,Hyundai County,31,L09,2025-11-01,actif
+B056,TG 4078-AC,King Long XMQ6900,46,L03,2025-01-01,maintenance
+B057,TG 9572-BD,Hyundai County,28,L11,2020-02-01,actif
+B058,TG 9957-BD,Yutong ZK6107HA,49,L12,2019-01-01,actif
+B059,TG 6025-BC,Mercedes-Benz Citaro,76,L07,2020-09-01,actif
+B060,TG 3324-BD,Hyundai County,30,L09,2022-05-01,actif
+B061,TG 4109-AC,Yutong ZK6107HA,50,L09,2022-06-01,actif
+B062,TG 7367-AC,King Long XMQ6900,43,L10,2025-07-01,actif
+B063,TG 9804-AC,King Long XMQ6900,47,L01,2020-06-01,actif
+B064,TG 3685-AB,Mercedes-Benz Citaro,77,L11,2018-06-01,actif
+B065,TG 5958-AC,Toyota Coaster,28,L10,2021-03-01,actif
+B066,TG 6345-BA,Mercedes-Benz Citaro,73,L07,2022-10-01,actif
+B067,TG 2925-AD,Hyundai County,31,L02,2021-06-01,actif
+B068,TG 8470-BC,Yutong ZK6107HA,48,L02,2019-08-01,actif
+B069,TG 5346-BD,Iveco Crossway,59,L06,2024-09-01,actif
+B070,TG 6287-BD,King Long XMQ6900,46,L07,2023-03-01,actif
+B071,TG 8585-AC,King Long XMQ6900,45,L06,2024-10-01,actif
+B072,TG 3529-BA,King Long XMQ6900,47,L11,2020-07-01,actif
+B073,TG 2930-AD,Yutong ZK6107HA,51,L05,2020-09-01,actif
+B074,TG 4838-AD,Iveco Crossway,62,L02,2022-05-01,actif
+B075,TG 7573-BA,Mercedes-Benz Citaro,77,L12,2023-11-01,actif
+B076,TG 2556-BD,Hyundai County,32,L09,2021-07-01,actif
+B077,TG 6414-AB,Hyundai County,29,L01,2022-09-01,actif
+B078,TG 3139-AD,Toyota Coaster,31,L07,2025-08-01,actif
+B079,TG 1614-AC,King Long XMQ6900,43,L11,2022-06-01,actif
+B080,TG 4427-BA,Toyota Coaster,29,L10,2023-02-01,actif
+B081,TG 4074-BC,Mercedes-Benz Citaro,73,L03,2023-04-01,maintenance
+B082,TG 4381-BC,King Long XMQ6900,44,L12,2022-02-01,actif
+B083,TG 9549-BD,Toyota Coaster,31,L03,2019-01-01,actif
+B084,TG 7873-AB,Iveco Crossway,62,L12,2021-08-01,actif
+B085,TG 6591-AD,Yutong ZK6107HA,50,L10,2025-05-01,actif
+B086,TG 6358-AD,Mercedes-Benz Citaro,76,L03,2018-08-01,actif
+B087,TG 5159-BA,Iveco Crossway,60,L05,2024-05-01,actif
+B088,TG 1887-BA,Mercedes-Benz Citaro,77,L11,2022-08-01,actif
+B089,TG 9349-BC,Toyota Coaster,29,L08,2023-11-01,actif
+B090,TG 3968-AB,Toyota Coaster,28,L05,2024-11-01,actif
+B091,TG 4519-AB,Hyundai County,29,L04,2024-09-01,actif
+B092,TG 3072-BC,Iveco Crossway,60,L12,2025-03-01,actif
+B093,TG 6337-AD,King Long XMQ6900,46,L09,2021-03-01,actif
+B094,TG 3508-BD,Iveco Crossway,59,L11,2018-11-01,actif
+B095,TG 5593-AD,Iveco Crossway,59,L05,2023-03-01,actif
+B096,TG 4056-BD,Mercedes-Benz Citaro,74,L11,2020-07-01,actif
+B097,TG 9023-BC,Mercedes-Benz Citaro,75,L04,2023-09-01,actif
+B098,TG 7664-AC,Yutong ZK6107HA,49,L12,2018-08-01,actif
+B099,TG 2550-AD,Toyota Coaster,29,L06,2018-03-01,actif
+B100,TG 2475-BA,King Long XMQ6900,46,L04,2020-04-01,actif

@@ -1,0 +1,13 @@
+tarif_id,type,libelle,prix_fcfa,duree_validite_jours,public_cible
+T01,unitaire,Ticket unitaire adulte,200,0,tout_public
+T02,unitaire,Ticket aller-retour,350,1,tout_public
+T03,unitaire,Ticket unitaire étudiant,100,0,etudiant
+T04,unitaire,Ticket unitaire scolaire,100,0,scolaire
+T05,unitaire,Ticket unitaire senior (+60),100,0,senior
+T06,abonnement,Pass journalier illimité,1500,1,tout_public
+T07,abonnement,Pass hebdomadaire,6000,7,tout_public
+T08,abonnement,Pass mensuel,18000,30,tout_public
+T09,abonnement,Pass mensuel étudiant,9000,30,etudiant
+T10,abonnement,Pass mensuel scolaire,7000,30,scolaire
+T11,abonnement,Pass mensuel senior,12000,30,senior
+T12,abonnement,Pass trimestriel,50000,90,tout_public

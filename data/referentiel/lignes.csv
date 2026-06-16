@@ -1,0 +1,13 @@
+ligne_id,nom,terminus_depart,terminus_arrivee,nb_arrets,distance_km
+L01,Adidogomé - Adawlato,Adidogomé Assiyéyé,Adawlato Marché,9,9.89
+L02,Agoè Assiyéyé - Grand Marché,Agoè Assiyéyé Terminus,Adawlato Grand Marché,9,16.28
+L03,Avédji - Adawlato,Avédji Limousine,Adawlato Marché,9,11.67
+L04,Université de Lomé - Adawlato,Campus Universitaire,Adawlato Marché,8,5.65
+L05,Hédzranawoé - Adawlato,Hédzranawoé Terminus,Adawlato Marché,8,7.37
+L06,Bè - Tokoin Casablanca,Bè Kpota,Tokoin Casablanca,7,5.49
+L07,Cacavéli - BIA Centre,Cacavéli Marché,BIA Centre,7,10.03
+L08,Aéroport GTA - Adawlato,Aéroport GTA,Adawlato Marché,7,8.73
+L09,Baguida - Adawlato,Baguida Terminus,Adawlato Marché,8,13.13
+L10,Anfamé - Université de Lomé,Anfamé Terminus,Campus Universitaire,8,5.89
+L11,Djidjolé - Adawlato,Djidjolé Terminus,Adawlato Marché,6,5.85
+L12,Kégué Stade - Adawlato,Stade de Kégué,Adawlato Marché,7,8.45
