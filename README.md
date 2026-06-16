@@ -139,4 +139,4 @@ Tout est open source et déployable localement, sans compte cloud payant.
 
 ## Contact
 
-Pour toute question : **Denis AKPAGNONITE**
+Pour toute question : Laisser un commentaire sur **Google Classroom** ou envoyer un email à **Denis AKPAGNONITE**
