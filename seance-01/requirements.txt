@@ -1,0 +1,4 @@
+# requirements.txt
+# boto3 : SDK officiel AWS pour Python.
+# Comme MinIO expose une API compatible S3, on l'utilise tel quel avec MinIO.
+boto3==1.34.0
