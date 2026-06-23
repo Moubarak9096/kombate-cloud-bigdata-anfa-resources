@@ -1,0 +1,8 @@
+# requirements.txt
+# PySpark : le moteur de traitement distribué (mode local pour ce TP)
+pyspark==3.5.0
+
+# requirements.txt
+# boto3 : SDK officiel AWS pour Python.
+# Comme MinIO expose une API compatible S3, on l'utilise tel quel avec MinIO.
+boto3==1.34.0
