@@ -1,0 +1,49 @@
+# minio-deployment.yaml
+# ─────────────────────────────────────────────────────────────
+# Déploiement de MinIO : K8s va créer et maintenir 1 pod MinIO.
+# Si le pod meurt, le Deployment en recrée un automatiquement.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minio
+spec:
+  replicas: 1                       # 1 copie du pod
+  selector:
+    matchLabels:
+      app: minio                    # le Deployment gère les pods ayant ce label
+  template:                         # le "moule" des pods à créer
+    metadata:
+      labels:
+        app: minio                  # les pods reçoivent ce label
+    spec:
+      containers:
+      - name: minio
+        image: minio/minio:latest
+        # Commande exécutée dans le conteneur
+        args:
+          - server
+          - /data
+          - --console-address
+          - ":9001"
+        # Variables d'environnement
+        env:
+          - name: MINIO_ROOT_USER
+            value: "anfa-admin"
+          - name: MINIO_ROOT_PASSWORD
+            value: "anfa-password-2026"
+        # Ports utilisés par le conteneur (déclaratif, comme EXPOSE en Docker)
+        ports:
+          - name: api               # nom symbolique du port
+            containerPort: 9000
+          - name: console
+            containerPort: 9001
+        # Montage du PersistentVolumeClaim dans le conteneur
+        volumeMounts:
+          - name: data              # référence au volume défini plus bas
+            mountPath: /data        # chemin DANS le conteneur
+      # Volumes disponibles pour ce pod
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: minio-pvc    # référence au PVC créé en 5.1
