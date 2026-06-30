@@ -125,7 +125,7 @@ Tout est open source et déployable localement, sans compte cloud payant.
 | Besoin                  | Outil                          |
 |-------------------------|--------------------------------|
 | Conteneurisation        | Docker, Docker Compose         |
-| Orchestration           | Kubernetes (Minikube)          |
+| Orchestration           | Kubernetes (Kind)              |
 | Infrastructure as Code  | Terraform                      |
 | CI/CD                   | GitHub Actions                 |
 | Stockage objet          | MinIO (compatible S3)          |
