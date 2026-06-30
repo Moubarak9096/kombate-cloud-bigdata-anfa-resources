@@ -1,0 +1,13 @@
+FROM jupyter/pyspark-notebook:latest
+
+USER root
+
+# Installer boto3
+RUN pip3 install boto3
+
+# Copier les scripts
+COPY jobs/*.py /home/jovyan/jobs/
+
+USER jovyan
+
+WORKDIR /home/jovyan/jobs
