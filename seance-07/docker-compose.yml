@@ -1,5 +1,10 @@
 # docker-compose.yml — Cluster Kafka 3 brokers (KRaft) + Kafka UI + MinIO + Spark
 # ──────────────────────────────────────────────────────────────────────────────
+# Image Kafka : apache/kafka:4.3.1 (image OFFICIELLE Apache).
+#   → Les variables utilisent le préfixe KAFKA_ (et non KAFKA_CFG_ comme Bitnami).
+#   → KAFKA_CLUSTER_ID doit être un UUID base64 valide, identique sur les 3 nœuds.
+# Image Spark : apache/spark:3.5.8-python3 (même logique qu'en séance 5 :
+#   on démarre master/worker via les scripts sbin/ avec SPARK_NO_DAEMONIZE).
 
 services:
 
@@ -11,21 +16,26 @@ services:
     container_name: anfa-kafka-1
     restart: unless-stopped
     ports:
-      - "19092:19092"
+      - "19092:19092"     # port EXTERNE (accessible depuis l'hôte)
     environment:
+      # ── Identité du nœud dans le cluster ──
       KAFKA_NODE_ID: 1
       KAFKA_PROCESS_ROLES: broker,controller
+      # ── Quorum KRaft : les 3 nœuds qui participent à la coordination ──
       KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka-1:9093,2@kafka-2:9093,3@kafka-3:9093
       KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      # ── Écoutes réseau : interne (autres conteneurs), contrôleur, externe (hôte) ──
       KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:19092
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-1:9092,EXTERNAL://localhost:19092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      # ── Réplication : avec 3 brokers, on réplique chaque partition 3 fois ──
       KAFKA_DEFAULT_REPLICATION_FACTOR: 3
       KAFKA_MIN_INSYNC_REPLICAS: 2
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
+      # ── Identifiant unique du cluster (UUID base64, partagé par les 3 nœuds) ──
       KAFKA_CLUSTER_ID: "oPDaLQlUQ3Sg_L8LBoc5AA"
 
   # ──────────────────────────────────────────────────────
@@ -79,7 +89,7 @@ services:
       KAFKA_CLUSTER_ID: "oPDaLQlUQ3Sg_L8LBoc5AA"
 
   # ──────────────────────────────────────────────────────
-  # Kafka UI
+  # Kafka UI : interface web pour observer le cluster
   # ──────────────────────────────────────────────────────
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
@@ -96,7 +106,7 @@ services:
       - kafka-3
 
   # ──────────────────────────────────────────────────────
-  # MinIO
+  # MinIO : destination finale des agrégats Spark Streaming
   # ──────────────────────────────────────────────────────
   minio:
     image: minio/minio:latest
@@ -113,7 +123,7 @@ services:
     command: server /data --console-address ":9001"
 
   # ──────────────────────────────────────────────────────
-  # Spark Master
+  # Spark Master (même logique qu'en séance 5)
   # ──────────────────────────────────────────────────────
   spark-master:
     image: apache/spark:3.5.8-python3
@@ -123,18 +133,18 @@ services:
       - SPARK_NO_DAEMONIZE=true
     ports:
       - "7077:7077"
-      - "8091:8080"
+      - "8091:8080"      # UI Spark sur localhost:8091
     volumes:
       - ./jobs:/opt/jobs
-      - ./data:/opt/data
-    command: /opt/spark/sbin/start-master.sh
+    command: >
+      /opt/spark/sbin/start-master.sh
 
   # ──────────────────────────────────────────────────────
-  # Spark Worker 1
+  # Spark Worker (même logique qu'en séance 5)
   # ──────────────────────────────────────────────────────
-  spark-worker-1:
+  spark-worker:
     image: apache/spark:3.5.8-python3
-    container_name: anfa-spark-worker-1
+    container_name: anfa-spark-worker
     restart: unless-stopped
     depends_on:
       - spark-master
@@ -142,30 +152,10 @@ services:
       - SPARK_NO_DAEMONIZE=true
       - SPARK_WORKER_MEMORY=1G
       - SPARK_WORKER_CORES=1
-      - SPARK_MASTER_URL=spark://spark-master:7077
     volumes:
       - ./jobs:/opt/jobs
-      - ./data:/opt/data
-    command: /opt/spark/sbin/start-worker.sh spark://spark-master:7077
-
-  # ──────────────────────────────────────────────────────
-  # Spark Worker 2 (AJOUTÉ)
-  # ──────────────────────────────────────────────────────
-  spark-worker-2:
-    image: apache/spark:3.5.8-python3
-    container_name: anfa-spark-worker-2
-    restart: unless-stopped
-    depends_on:
-      - spark-master
-    environment:
-      - SPARK_NO_DAEMONIZE=true
-      - SPARK_WORKER_MEMORY=1G
-      - SPARK_WORKER_CORES=1
-      - SPARK_MASTER_URL=spark://spark-master:7077
-    volumes:
-      - ./jobs:/opt/jobs
-      - ./data:/opt/data
-    command: /opt/spark/sbin/start-worker.sh spark://spark-master:7077
+    command: >
+      /opt/spark/sbin/start-worker.sh spark://spark-master:7077
 
 volumes:
   minio-data:

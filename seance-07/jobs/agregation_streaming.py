@@ -51,7 +51,6 @@ def main():
         .option("kafka.bootstrap.servers", "kafka-1:9092,kafka-2:9092,kafka-3:9092")
         .option("subscribe", "anfa-positions-bus")
         .option("startingOffsets", "latest")
-        .option("failOnDataLoss", "false")   # 👈 AJOUT : ignore la perte de données
         .load()
     )
 
